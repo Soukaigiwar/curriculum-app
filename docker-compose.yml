@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.2"
 services:
  vite_docker:
    image: node:18-alpine
@@ -8,8 +8,8 @@ services:
      - 4000:4000
    working_dir: /srv/app
    volumes:
-     - type: "bind"
-       source: "./"
-       target: "/srv/app"
+     - type: bind
+       source: ./
+       target: /srv/app
    tty: true
    command: -c "npm i && npm run dev"
