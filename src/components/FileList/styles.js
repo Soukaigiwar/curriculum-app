@@ -60,8 +60,8 @@ export const Container = styled.div`
             }
 
 
-            > .new {
-                
+            a {
+                color: var(--title)
             }
 
         }

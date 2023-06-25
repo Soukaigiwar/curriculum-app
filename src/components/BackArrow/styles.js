@@ -8,6 +8,10 @@ export const Container = styled.button`
     border: none;
     background: none;
 
+    a {
+        color: var(--tag)
+    }
+
     &:active {
         filter: brightness(1.1);
     }

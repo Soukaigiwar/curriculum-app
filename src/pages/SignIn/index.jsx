@@ -1,4 +1,5 @@
 import { Container, Form } from "./styles";
+import { Link } from "react-router-dom";
 
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
@@ -32,8 +33,8 @@ export function SignIn() {
                     <Button label="SIGN IN" />
                 </div>
                 <div className="option">
-                    <p>Forgot <a href="#">username / password</a></p>
-                    <p>Don´t have an account? <a href="#">sign-up</a></p>
+                    <p>Forgot <Link to="/reset_password">username / password</Link></p>
+                    <p>Don´t have an account? <Link to="/register">sign-up</Link></p>
                 </div>
             </Form>
             <Footer />

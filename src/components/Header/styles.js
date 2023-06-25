@@ -24,12 +24,17 @@ export const Brand = styled.div`
     align-items: center;
     font-family: var(--ff-title);
 
+    
     > div {
         display: flex;
         align-items: baseline;
         margin-right: 20px;
         cursor: default;
 
+        > a {
+            color: var(--title)
+        }
+        
         h1 {
             text-transform: capitalize;
         }

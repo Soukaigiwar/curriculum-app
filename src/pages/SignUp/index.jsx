@@ -1,4 +1,5 @@
 import { Container, Form } from "./styles";
+import { Link } from "react-router-dom";
 
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
@@ -47,7 +48,7 @@ export function SignUp() {
                     </div>
                     <div className="agreement">
                         <input type="checkbox" name="agreement" id="agreement" />
-                        <label htmlFor="agreement">I agree all statements in <a href="#">Terms of service</a>.</label>
+                        <label htmlFor="agreement">I agree all statements in <Link to="/terms_of_service">Terms of service</Link>.</label>
                     </div>
                 </Form>
             <Footer />

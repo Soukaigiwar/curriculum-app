@@ -37,6 +37,10 @@ export const Content = styled.div`
         background-color: var(--scrollbar);
         box-shadow: 0px 3px 3px 0px var(--shadow-light);
     }
+
+    a {
+        color: var(--title);
+    }
     
     p {
         width: 600px;

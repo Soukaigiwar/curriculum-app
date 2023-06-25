@@ -1,4 +1,5 @@
 import { Container, Content } from "./styles";
+import { Link } from "react-router-dom";
 
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
@@ -12,7 +13,7 @@ export function Home() {
             <Header />
             <Content>
                 <p>generate and organize your<span>curriculums.</span></p>
-                <p>sign up<span>now! <a href="#"><FcSportsMode /></a></span></p>
+                <p><Link to="/register">sign up</Link><span>now!<FcSportsMode /></span></p>
             </Content>
             <Footer />
         </Container>

@@ -13,10 +13,20 @@ export const Container = styled.div`
     color: var(--content-area);
     font-size: 14px;
     box-shadow: 5px 0px 5px 5px var(--shadow-light);
+
+    a {
+        margin-left: 9px;
+        color: var(--white);
+
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
     
     span {
         font-size: 20px;
-        padding: 0 5px;
+        padding: 0 9px;
         color: var(--red);
     }
 `;
