@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-    display: flex;
+    > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: var(--tag);
+    }
     
-    font-size: 16px;
-    color: var(--tag);
     border: none;
     background: none;
 
-    a {
+    > a {
         color: var(--tag)
     }
 

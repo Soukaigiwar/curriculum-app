@@ -5,7 +5,9 @@ import { FiArrowLeft } from "react-icons/fi";
 export function BackArrow({label}) {
     return (
         <Container>
-            <span><Link to="/"><FiArrowLeft /></Link></span>{label}
+            <div>
+                <Link to="/"><span><FiArrowLeft /></span>{label}</Link>
+            </div>
         </Container>
     );
 };
