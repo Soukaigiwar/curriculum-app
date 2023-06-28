@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Container, Brand, Profile, Logout } from './styles';
-import { RiShutDownLine } from 'react-icons/ri'
-import { Tag } from "../Tag"
+import { RiShutDownLine } from 'react-icons/ri';
+import { Tag } from "../Tag";
+import { useAuth } from '../../hooks/auth';
 
 export function Header() {
+    const { signOut } = useAuth();
+    
     return (
         <Container>
             <Brand>
@@ -29,7 +32,7 @@ export function Header() {
                         alt="User photo."
                     />
                 </Link>
-                <Logout>
+                <Logout onClick={signOut}>
                     <RiShutDownLine />
                 </Logout>
             </Profile>
