@@ -15,6 +15,9 @@ export function Curriculums() {
                 <Section label={"Saved files:"}>
                     <FileList />
                 </Section>
+                <Section label={"Templates:"}>
+                    <FileList />
+                </Section>
             </Content>
             <Footer />
         </Container>

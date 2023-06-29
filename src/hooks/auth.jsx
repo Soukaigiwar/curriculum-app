@@ -35,6 +35,23 @@ function AuthProvider({ children }) {
         setData({});
     };
 
+    async function updateProfile({ user }) {
+        try {
+            await api.put("/users", user);
+            localStorage.setItem("@curriculum:user", JSON.stringify(user));
+
+            setData({ user, token: data.token });
+            console.log("updated profile");
+        } catch (error) {
+            if (error.response) {
+                alert(error.response.data.message);
+            }
+            else {
+                alert("Login error.");
+            };
+        }
+    }
+
     useEffect(() => {
         const token = localStorage.getItem("@curriculum:token");
         const user = localStorage.getItem("@curriculum:user");
@@ -53,6 +70,7 @@ function AuthProvider({ children }) {
         <AuthContext.Provider value={{
             signIn,
             signOut,
+            updateProfile,
             user: data.user
         }}>
             {console.log(AuthContext.data)}
